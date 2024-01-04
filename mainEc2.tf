@@ -9,25 +9,25 @@ resource "aws_instance" "web" {
 }
 
 resource "aws_security_group" "mySecurity4Jan" { #terraform name
-    name = "mySecurity4Jan_aws" # aws name
-    description = "allow all inbound traffic"
+    name = var.sg-name # aws name
+    description = var.sg-desp
     #vpc_id = aws_vpc.main.id 
 
     ingress {
         description = "Allow all port"
-        from_port = 0
-        to_port = 0
+        from_port = var.sg-inbound-outbound-port
+        to_port = var.sg-inbound-outbound-port
         protocol = "tcp"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = var.cidr_blocks
         #ipv6_cidr_blocks = 
 
     }
     
     egress {
-        from_port = 0
-        to_port = 0
+        from_port = var.sg-inbound-outbound-port
+        to_port = var.sg-inbound-outbound-port
         protocol = "-1"
-        cidr_blocks = ["0.0.0.0/0"]
+        cidr_blocks = var.cidr_blocks
     }
 
     tags ={
