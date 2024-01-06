@@ -1,0 +1,1 @@
+instance_type-name = "t3.small"  # to overide the Variable value
