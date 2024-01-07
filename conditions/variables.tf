@@ -3,14 +3,24 @@ variable "ami-name"{
     default = "ami-03265a0778a880afb"
 }
 
-variable "instance_type-name"{
+variable "instance_type_t2micro"{
     type = string
     default = "t2.micro"
 }
 
-variable "instance_name"{
+variable "instance_type_t3small"{
+    type = string
+    default = "t3.small"
+}
+
+variable "instance_name_web"{
     type = string
     default = "web"
+}
+
+variable "instance_name_mangoDB"{
+    type = string
+    default = "mangoDB"
 }
 
 variable "tags-maps"{
