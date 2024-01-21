@@ -8,7 +8,7 @@ then
    exit 1
  else
    echo "You are in Root" 
-   yum install git -y
+   yum install gittt -y
 fi
 
 if [ $? -ne 0 ]
