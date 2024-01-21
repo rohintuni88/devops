@@ -2,6 +2,7 @@
 
 USERVALIDATION(){
     uid=$(id -u) 
+    echo "Script Name: $0"
 
 if [ $uid -ne 0 ]
 then
