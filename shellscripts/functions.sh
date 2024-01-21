@@ -1,8 +1,9 @@
 
 
 USERVALIDATION(){
-    uid=$(id -u) 
-
+uid=$(id -u) 
+TIMESTAMP=$(date +%F-%H-%M-%S)
+LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 if [ $uid -ne 0 ]
 then
@@ -34,8 +35,7 @@ fi
 }
 
 USERVALIDATION
-echo "Script Name: $0"
-yum install git -y
+yum install git -y &>>$LOGFILE
 GITVALIDATION
-yum install mysql -y
+yum install mysql -y &>>$LOGFILE
 MYSQLVALIDATION
