@@ -5,7 +5,7 @@ uid=$(id -u)
 if [ $uid -ne 0 ]
    echo "Not Root"
    exit 1
-
+fi
 yum install git -y
 if [ $? -ne 0 ]
 then
@@ -14,4 +14,3 @@ then
 else 
    echo "Git Installation sucessful"
 fi
-
