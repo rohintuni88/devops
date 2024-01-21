@@ -1,7 +1,7 @@
 #!bin/bash
 
 uid=$1
-if[ $uid !=0]
+if[ $uid !=0 ]
 then
   echo "Not Root"
  else
