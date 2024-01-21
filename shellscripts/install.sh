@@ -8,6 +8,15 @@ then
    exit 1
  else
    echo "You are in Root" 
+   yum install git -y
+fi
+
+if [ $? -ne 0 ]
+then
+   echo "Error"
+   exit 1
+else 
+   echo "Git Installation sucessful"
 fi
 
 echo "Hello World"
