@@ -1,10 +1,4 @@
 
-USERVALIDATION
-yum install git -y
-GITVALIDATION
-yum install mysql -y
-MYSQLVALIDATION
-
 
 USERVALIDATION(){
     uid=$(id -u) 
@@ -37,3 +31,9 @@ else
    echo "Git MySQL sucessful"
 fi
 }
+
+USERVALIDATION
+yum install git -y
+GITVALIDATION
+yum install mysql -y
+MYSQLVALIDATION
