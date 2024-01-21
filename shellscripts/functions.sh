@@ -2,7 +2,7 @@
 
 USERVALIDATION(){
     uid=$(id -u) 
-    echo "Script Name: $0"
+
 
 if [ $uid -ne 0 ]
 then
@@ -34,6 +34,7 @@ fi
 }
 
 USERVALIDATION
+echo "Script Name: $0"
 yum install git -y
 GITVALIDATION
 yum install mysql -y
