@@ -3,7 +3,6 @@
 PERSON0="Rohin"
 PERSON1="Hi $PERSON0"
 PERSON2="Hello $PERSON0"
-X=$10
-Y=$20
+DATE=$(date)
 
-echo "$PERSON1$PERSON2$C=10+20"   # to print
+echo "$PERSON1$PERSON2${DATE}"   # to print 
