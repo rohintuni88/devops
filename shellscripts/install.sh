@@ -25,5 +25,5 @@ then
    echo "Error $?"
    exit 1
 else 
-   echo "Git Installation sucessful"
+   echo "Git MySQL sucessful"
 fi
