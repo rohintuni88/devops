@@ -6,4 +6,4 @@ PERSON2="Hello $PERSON0"
 X=$10
 Y=$20
 
-echo "$PERSON1$PERSON2$C=$X+$Y"   # to print
+echo "$PERSON1$PERSON2$C=10+20"   # to print
