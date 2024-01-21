@@ -13,7 +13,7 @@ fi
 
 if [ $? -ne 0 ]
 then
-   echo "Error"
+   echo "Error $?"
    exit 1
 else 
    echo "Git Installation sucessful"
