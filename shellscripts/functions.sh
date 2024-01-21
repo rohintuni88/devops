@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 USERVALIDATION(){
 uid=$(id -u) 
@@ -33,6 +33,7 @@ else
    echo "Git MySQL sucessful"
 fi
 }
+
 
 USERVALIDATION
 yum install git -y &>>$LOGFILE
