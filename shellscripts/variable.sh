@@ -4,5 +4,6 @@ PERSON0="Rohin"
 PERSON1="Hi $PERSON0"
 PERSON2="Hello $PERSON0"
 DATE=$(date)
+read PERSON3
 
-echo "$PERSON1$PERSON2${DATE}"   # to print 
+echo "$PERSON1$PERSON2${DATE}$PERSON3"   # to print 
