@@ -1,3 +1,11 @@
+
+USERVALIDATION
+yum install git -y
+GITVALIDATION
+yum install mysql -y
+MYSQLVALIDATION
+
+
 USERVALIDATION(){
     uid=$(id -u) 
 
