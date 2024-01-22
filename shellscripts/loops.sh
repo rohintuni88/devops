@@ -25,11 +25,11 @@ fi
   for package in $@
   do
      yum list installed $package &>> $LOGFILE  # check installed or not
-     if[ $? -ne 0 ]
+     if [ $? -ne 0 ]
      then
-        yum install $package -y &>>  $LOGFILE  # Install packages
+         yum install $package -y &>>  $LOGFILE  # Install packages
      else
-        echo "$package is already installed
+         echo "$package is already installed
       fi
   done
 
