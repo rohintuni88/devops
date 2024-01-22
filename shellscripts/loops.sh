@@ -29,10 +29,6 @@ fi
      then
          yum install $package -y &>>  $LOGFILE  # Install packages
      else
-         echo "$package is already installed
+         echo "$package is already installed"
       fi
   done
-
-
- 
-
