@@ -20,7 +20,7 @@ then
    echo "You are in Root" 
 fi
 }
-
+  USERVALIDATION &>> $LOGFILE
   echo "All Args passed: $@"
   for package in $@
   do
@@ -33,9 +33,6 @@ fi
       fi
   done
 
-
-USERVALIDATION &>> $LOGFILE
-echo "All Args passed: $@"
 
  
 
