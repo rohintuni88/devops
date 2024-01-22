@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {1..10}
+for i in {1..5}
 do
   echo "$i"
 done 
@@ -21,7 +21,7 @@ then
 fi
 }
 
-INSATALLAPPS(){
+  echo "All Args passed: $@"
   for package in $@
   do
      yum list installed $package &>> $LOGFILE  # check installed or not
@@ -32,7 +32,7 @@ INSATALLAPPS(){
         echo "$package is already installed
       fi
   done
-}
+
 
 USERVALIDATION &>> $LOGFILE
 echo "All Args passed: $@"
