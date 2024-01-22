@@ -24,10 +24,10 @@ fi
   echo "All Args passed: $@"
   for package in $@
   do
-     yum list installed $package   # check installed or not
+     yum list installed $package &>> $LOGFILE  # check installed or not
      if [ $? -ne 0 ]
      then
-         yum install $package -y   # Install packages
+         yum install $package -y &>> $LOGFILE # Install packages
      else
          echo "$package is already installed"
       fi
